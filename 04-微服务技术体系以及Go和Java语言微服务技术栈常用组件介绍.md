@@ -65,12 +65,18 @@ zipkin，pinpoint，skywalking，jaeger
 用java技术开发微服务，比较主流的选择有：Spring Cloud 和 Dubbo。
 
 ### Spring Cloud
-[Spring Cloud](https://github.com/spring-cloud)是在Spring基础上构建的，它后面有2大公司支撑，Pivotal和Netflix的技术支持。它的核心就是Netflix贡献的源码，也是这家公司构建了整套微服务体系，才使得微服务架构逐渐流行开来，所以说Netflix在微服务上的贡献是巨大的。
 
-#### Pivotal的SpingCloud框架
-[Spring Cloud](https://github.com/spring-cloud) ，这个是Pivotal集成了Netflix，或者重新改写了它的框架。
+[Spring Cloud](https://github.com/spring-cloud)是在Spring基础上构建的，它后面有2大公司支撑，Pivotal 和 Netflix 的技术支持。它的核心就是 Netflix 贡献的源码，也是这家公司构建了整套微服务体系，才使得微服务架构逐渐流行开来，所以说Netflix在微服务上的贡献是巨大的。
 
-Spring是一个全家桶，Spring Cloud也是一个全家桶，它由很多技术框架组合而成：
+#### Pivotal 的 SpingCloud 框架
+
+[Spring Cloud](https://github.com/spring-cloud) ，这个是 Pivotal 集成了 Netflix，或者重新改写了它的框架。
+
+![SpringCloud（Pivotal）组件](https://github.com/user-attachments/assets/c99391d5-f514-46e8-99d1-d8c3c68c5b09)
+
+
+
+Spring 是一个全家桶，Spring Cloud也是一个全家桶，它由很多技术框架组合而成：
 - 服务治理
   - 服务注册和发现：Netflix Eureka
   当然我们也有其他的选择，比如consul，etcd，zookeeper等
@@ -80,19 +86,23 @@ Spring是一个全家桶，Spring Cloud也是一个全家桶，它由很多技�
   
 - 网关
   API 网关：Zuul
+  
   当然我们也可以选择其他的，比如Spring Cloud Gateway，kong，nginx+lua，apisix等
   
 - 分布式链路监控
   - Spring Cloud Sleuth：埋点和发送数据
+    
   当然还有其他的比如zipkin，pinpoint，skywalking，jaeger等
   
 - 消息组件
   - Spring Cloud Stream
   - Spirng Cloud Bus
+    
   消息中间件的其他软件：RocketMQ，Kafka，RabbitMQ
   
 - 配置中心
   - Spring Cloud Config
+    
    配置中心可以有其他的替代，比如Apollo，Nacos等
   
 - 安全控制
@@ -102,6 +112,7 @@ Spring是一个全家桶，Spring Cloud也是一个全家桶，它由很多技�
 [https://spring.io/projects/spring-cloud](https://spring.io/projects/spring-cloud) 这个地址列出了springcloud各种框架，就是它的文档地址。
 
 #### 阿里巴巴的SpringCloud
+
 阿里巴巴在SpringCloud之上，开发了自己的微服务框架[spring-cloud-alibaba](https://github.com/alibaba/spring-cloud-alibaba) 。
 - [spring-cloud-alibaba wiki](https://github.com/alibaba/spring-cloud-alibaba/wiki)
 
